@@ -94,7 +94,7 @@ st.markdown("""
         opacity: 0.85;
     }
     .album-title-art {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         font-weight: 700;
         line-height: 1.3;
         word-break: keep-all;
@@ -149,150 +149,150 @@ mood_info = {
     }
 }
 
-# --- 3. 요청하신 기분별 하현상 음악 리스트 & 정확한 앨범 매칭 데이터베이스 ---
+# --- 3. 알려주신 15곡의 앨범명을 정확히 반영한 데이터베이스 ---
 songs_by_mood = {
     "슬픔": [
         {
             "곡 제목": "집에 가는 길",
-            "앨범명": "Time and Trace (정규 1집)",
+            "앨범명": "Time and Trace",
             "cover_bg": "linear-gradient(135deg, #5C6B73 0%, #9DB4C0 100%)",
             "text_color": "#FAF9F5",
             "album_eng": "TIME AND TRACE",
-            "release_type": "1st Full Album · 2023",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "지친 하루 끝에 홀로 걸어가는 길 위의 쓸쓸함과 그리움을 담담하게 풀어내 가슴이 먹먹해지는 곡입니다."
         },
         {
             "곡 제목": "Pain",
-            "앨범명": "With All My Heart (EP)",
+            "앨범명": "With All My Heart",
             "cover_bg": "linear-gradient(135deg, #2B2D42 0%, #5C627D 100%)",
             "text_color": "#EDF2F4",
             "album_eng": "WITH ALL MY HEART",
-            "release_type": "4th EP · 2024",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "깊고 시린 감정의 아픔을 섬세하고 애절한 보컬로 그려내 조용히 눈물을 훔치게 만드는 트랙입니다."
         },
         {
             "곡 제목": "시간과 흔적",
-            "앨범명": "Time and Trace (정규 1집)",
+            "앨범명": "Time and Trace",
             "cover_bg": "linear-gradient(135deg, #6E7F6B 0%, #A9B8A4 100%)",
             "text_color": "#FAF9F5",
             "album_eng": "TIME AND TRACE",
-            "release_type": "1st Full Album · 2023",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "지나간 시간과 남겨진 흔적들을 되돌아보며 밀려오는 아련함과 벅찬 그리움을 담은 대표곡입니다."
         }
     ],
     "신나는": [
         {
             "곡 제목": "오디세이",
-            "앨범명": "Elegy (EP)",
+            "앨범명": "New Boat",
             "cover_bg": "linear-gradient(135deg, #2E5A88 0%, #6FA3D2 100%)",
             "text_color": "#FFFFFF",
-            "album_eng": "ELEGY",
-            "release_type": "5th EP · 2024",
+            "album_eng": "NEW BOAT",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "미지의 세계로 모험을 떠나는 듯한 웅장하고 역동적인 사운드가 듣는 순간 가슴을 뛰게 만듭니다."
         },
         {
             "곡 제목": "소년의 방",
-            "앨범명": "Time and Trace (정규 1집)",
+            "앨범명": "Time and Trace",
             "cover_bg": "linear-gradient(135deg, #6E7F6B 0%, #A9B8A4 100%)",
             "text_color": "#FAF9F5",
             "album_eng": "TIME AND TRACE",
-            "release_type": "1st Full Album · 2023",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "경쾌한 밴드 사운드와 순수하고 자유로운 에너지가 기분 좋은 텐션과 설렘을 불어넣습니다."
         },
         {
             "곡 제목": "Tiny Dance",
-            "앨범명": "With All My Heart (EP)",
+            "앨범명": "New Boat",
             "cover_bg": "linear-gradient(135deg, #4F759B 0%, #8CB3D9 100%)",
             "text_color": "#FFFFFF",
-            "album_eng": "WITH ALL MY HEART",
-            "release_type": "4th EP · 2024",
+            "album_eng": "NEW BOAT",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "가볍게 춤추듯 리드미컬하게 흘러가는 멜로디가 발걸음을 경쾌하게 만들어 주는 트랙입니다."
         }
     ],
     "행복함": [
         {
             "곡 제목": "New Boat",
-            "앨범명": "Calibrate (EP)",
+            "앨범명": "New Boat",
             "cover_bg": "linear-gradient(135deg, #3A6073 0%, #78A2B7 100%)",
             "text_color": "#F9FBFD",
-            "album_eng": "CALIBRATE",
-            "release_type": "2nd EP · 2021",
+            "album_eng": "NEW BOAT",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "새로운 항해를 시작하는 설렘과 산뜻한 바람처럼 기분 좋은 기대감을 채워주는 밝은 곡입니다."
         },
         {
             "곡 제목": "눈꽃",
-            "앨범명": "눈꽃 (싱글)",
+            "앨범명": "With All My Heart",
             "cover_bg": "linear-gradient(135deg, #7B8FA1 0%, #CFD8DC 100%)",
             "text_color": "#263238",
-            "album_eng": "SNOWFLAKE",
-            "release_type": "Digital Single · 2023",
+            "album_eng": "WITH ALL MY HEART",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "하얗게 내리는 눈꽃처럼 포근하고 로맨틱한 선율이 마음을 따뜻하고 행복하게 물들입니다."
         },
         {
             "곡 제목": "MAGIC",
-            "앨범명": "MAGIC (싱글)",
+            "앨범명": "MAGIC",
             "cover_bg": "linear-gradient(135deg, #4E7A9E 0%, #9CC2DF 100%)",
             "text_color": "#FFFFFF",
             "album_eng": "MAGIC",
-            "release_type": "Digital Single · 2022",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "일상이 마법처럼 특별해지는 두근거림과 산뜻한 기타 리듬이 입가에 미소를 번지게 합니다."
         }
     ],
     "우울함": [
         {
             "곡 제목": "Dawn",
-            "앨범명": "My Poor (EP)",
+            "앨범명": "My Poor Lonely Heart",
             "cover_bg": "linear-gradient(135deg, #1D222B 0%, #3A4252 100%)",
             "text_color": "#DCDFE6",
-            "album_eng": "MY POOR",
-            "release_type": "Debut EP · 2018",
+            "album_eng": "MY POOR LONELY HEART",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "모두가 잠든 고요한 새벽의 고독과 내면의 불안을 담아 새벽에 혼자 들으면 깊은 위로를 건네는 곡입니다."
         },
         {
             "곡 제목": "등대",
-            "앨범명": "Calibrate (EP)",
+            "앨범명": "Calibrate",
             "cover_bg": "linear-gradient(135deg, #1F3A52 0%, #4A708B 100%)",
             "text_color": "#F4F7FA",
             "album_eng": "CALIBRATE",
-            "release_type": "2nd EP · 2021",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "어두운 밤바다에서 길을 잃고 헤맬 때, 묵묵히 빛을 비춰주며 버팀목이 되어주는 뭉클한 위로곡입니다."
         },
         {
             "곡 제목": "파랑골목",
-            "앨범명": "Elegy (EP)",
+            "앨범명": "Calibrate",
             "cover_bg": "linear-gradient(135deg, #243B55 0%, #4B6CB7 100%)",
             "text_color": "#F0F4F8",
-            "album_eng": "ELEGY",
-            "release_type": "5th EP · 2024",
+            "album_eng": "CALIBRATE",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "푸른 새벽빛이 내려앉은 골목길을 걷는 듯한 차분하고 서정적인 무드가 가라앉은 마음을 조용히 다독여 줍니다."
         }
     ],
     "화나는": [
         {
             "곡 제목": "송가",
-            "앨범명": "Elegy (EP)",
+            "앨범명": "Elegy",
             "cover_bg": "linear-gradient(135deg, #232526 0%, #414345 100%)",
             "text_color": "#E8E6E1",
             "album_eng": "ELEGY",
-            "release_type": "5th EP · 2024",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "웅장하게 고조되는 드라마틱한 사운드와 강렬한 에너지가 복잡하고 답답한 감정을 시원하게 환기해 줍니다."
         },
         {
             "곡 제목": "파도",
-            "앨범명": "Time and Trace (정규 1집)",
+            "앨범명": "Time and Trace",
             "cover_bg": "linear-gradient(135deg, #2C3E50 0%, #4CA1AF 100%)",
             "text_color": "#F4F7F8",
             "album_eng": "TIME AND TRACE",
-            "release_type": "1st Full Album · 2023",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "거칠게 몰아치다 부서지는 파도처럼 요동치는 감정을 깊은 울림으로 풀어내며 마음을 차분하게 가라앉혀 줍니다."
         },
         {
             "곡 제목": "Same Old Song",
-            "앨범명": "Time and Trace (정규 1집)",
+            "앨범명": "Time and Trace",
             "cover_bg": "linear-gradient(135deg, #3E3B39 0%, #736B65 100%)",
             "text_color": "#F7F4EF",
             "album_eng": "TIME AND TRACE",
-            "release_type": "1st Full Album · 2023",
+            "release_type": "HA HYUN SANG",
             "추천 이유 (분위기 및 감상)": "반복되는 지루하고 답답한 일상 속 날카로운 감정을 세련된 사운드로 날려버릴 수 있는 트랙입니다."
         }
     ]
@@ -336,7 +336,7 @@ if st.session_state.selected_mood:
         with cover_cols[idx]:
             st.markdown(f"""
             <div class="album-cover-card" style="background: {song['cover_bg']}; color: {song['text_color']};">
-                <div class="album-artist">HA HYUN SANG</div>
+                <div class="album-artist">ALBUM COVER</div>
                 <div class="album-title-art">{song['album_eng']}<br><span style="font-size:0.9rem; font-weight:400;">- {song['곡 제목']} -</span></div>
                 <div class="album-type-tag">{song['release_type']}</div>
             </div>
